@@ -3,6 +3,29 @@
 - name: Getting Started
   href: getting-started.md
 - name: Samples
-  href: ../samples/toc.yml
+  href: ../samples/document-quality/metadata-completeness-checker/README.md
+  items:
+    - name: Document Quality
+      href: ../samples/document-quality/metadata-completeness-checker/README.md
+      items:
+        - name: Metadata Completeness Checker
+          href: ../samples/document-quality/metadata-completeness-checker/README.md
+        - name: ROT Content Identifier
+          href: ../samples/document-quality/rot-content-identifier/README.md
+    - name: "List & Library"
+      href: ../samples/list-library/column-schema-auditor/README.md
+      items:
+        - name: Column Schema Auditor
+          href: ../samples/list-library/column-schema-auditor/README.md
+    - name: Content Generation
+      href: ../samples/content-generation/meeting-notes-to-actions/README.md
+      items:
+        - name: Meeting Notes to Actions
+          href: ../samples/content-generation/meeting-notes-to-actions/README.md
+    - name: Governance
+      href: ../samples/governance/version-change-summary/README.md
+      items:
+        - name: Version Change Summary
+          href: ../samples/governance/version-change-summary/README.md
 - name: Contributing
   href: contributing.md
