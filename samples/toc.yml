@@ -5,7 +5,7 @@
       href: document-quality/metadata-completeness-checker/README.md
     - name: ROT Content Identifier
       href: document-quality/rot-content-identifier/README.md
-- name: List & Library
+- name: "List & Library"
   href: list-library/column-schema-auditor/README.md
   items:
     - name: Column Schema Auditor
