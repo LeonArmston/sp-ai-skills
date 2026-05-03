@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;600;700&display=swap');
+
+/* ============================================================
+   BASE — from ovasquez/docfx-material (MIT)
+   ============================================================ */
+
+:root {
+  --bs-font-sans-serif: 'Roboto', sans-serif;
+  --bs-border-radius: 10px;
+  --border-radius-button: 40px;
+  --card-box-shadow: 0 1px 2px 0 #3d41440f, 0 1px 3px 1px #3d414429;
+
+  --material-yellow-light: #e6dfbf;
+  --material-yellow-dark: #5a5338;
+  --material-blue-light: #c4d9f1;
+  --material-blue-dark: #383e5a;
+  --material-red-light: #f1c4c4;
+  --material-red-dark: #5a3838;
+  --material-warning-header: #f57f171a;
+  --material-warning-background: #f6e8bd;
+  --material-warning-background-dark: #57502c;
+  --material-info-header: #1976d21a;
+  --material-info-background: #e3f2fd;
+  --material-info-background-dark: #2c4557;
+  --material-danger-header: #d32f2f1a;
+  --material-danger-background: #ffebee;
+  --material-danger-background-dark: #572c2c;
+
+  /* SharePoint brand */
+  --sp-primary: #0f6cbd;
+  --sp-primary-dark: #094074;
+  --sp-primary-light: #cce3f5;
+  --sp-teal: #038387;
+  --sp-teal-dark: #025d60;
+
+  /* Category accent colours */
+  --cat-doc-bg: #e8f5f5;
+  --cat-doc-fg: #025d60;
+  --cat-list-bg: #f0ebf9;
+  --cat-list-fg: #5c2d91;
+  --cat-content-bg: #deeeff;
+  --cat-content-fg: #094074;
+  --cat-gov-bg: #fce8e2;
+  --cat-gov-fg: #a4262c;
+  --cat-auto-bg: #dff6dd;
+  --cat-auto-fg: #107c10;
+}
+
+/* ---- Typography ---- */
+
+h1 { font-weight: 600; font-size: 32px; }
+h2 { font-weight: 600; font-size: 24px; line-height: 1.8; }
+h3 { font-weight: 600; font-size: 20px; line-height: 1.8; }
+h5 { font-size: 14px; padding: 10px 0; }
+
+article h2,
+article h3,
+article h4 { margin-top: 15px; margin-bottom: 15px; }
+
+article h4 {
+  padding-bottom: 8px;
+  border-bottom: 2px solid #ddd;
+}
+
+/* ---- Images ---- */
+img {
+  border-radius: var(--bs-border-radius);
+  box-shadow: var(--card-box-shadow);
+}
+
+.navbar-brand > img { box-shadow: none; }
+
+/* ---- Navbar ---- */
+[data-bs-theme='light'] nav.navbar { background-color: var(--bs-primary-bg-subtle); }
+[data-bs-theme='dark']  nav.navbar { background-color: var(--bs-tertiary-bg); }
+
+.navbar-nav > li > a {
+  border-radius: var(--border-radius-button);
+  transition: 200ms;
+}
+.navbar-nav a.nav-link:focus,
+.navbar-nav a.nav-link:hover { background-color: var(--bs-primary-border-subtle); }
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show  { color: var(--bs-link-hover-color); }
+
+/* ---- Search input ---- */
+input.form-control { border-radius: var(--border-radius-button); }
+form.filter        { margin: 0.3rem; }
+
+/* ---- Alerts ---- */
+.alert { padding: 0; border: none; box-shadow: var(--card-box-shadow); }
+.alert > p  { padding: 0.2rem 0.7rem 0.7rem 1rem; }
+.alert > ul { margin-bottom: 0; padding: 5px 40px; }
+.alert > h5 {
+  padding: 0.5rem 0.7rem 0.7rem 1rem;
+  border-radius: var(--bs-border-radius) var(--bs-border-radius) 0 0;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.alert-info    { color: var(--material-blue-dark);   background-color: var(--material-info-background); }
+.alert-warning { color: var(--material-yellow-dark); background-color: var(--material-warning-background); }
+.alert-danger  { color: var(--material-red-dark);    background-color: var(--material-danger-background); }
+
+[data-bs-theme='dark'] .alert-info    { color: var(--material-blue-light);   background-color: var(--material-info-background-dark); }
+[data-bs-theme='dark'] .alert-warning { color: var(--material-yellow-light); background-color: var(--material-warning-background-dark); }
+[data-bs-theme='dark'] .alert-danger  { color: var(--material-red-light);    background-color: var(--material-danger-background-dark); }
+
+.alert-info    > h5 { background-color: var(--material-info-header); }
+.alert-warning > h5 { background-color: var(--material-warning-header); }
+.alert-danger  > h5 { background-color: var(--material-danger-header); }
+
+/* ---- Code ---- */
+code {
+  border-radius: var(--bs-border-radius);
+  margin: 4px 2px;
+  box-shadow: var(--card-box-shadow);
+}
+
+/* ============================================================
+   HERO SECTION
+   ============================================================ */
+
+.hero-section {
+  background: linear-gradient(135deg, var(--sp-primary-dark) 0%, var(--sp-teal-dark) 100%);
+  color: #fff;
+  padding: 64px 40px 56px;
+  margin: -20px -20px 48px;
+  border-radius: 0 0 16px 16px;
+}
+
+@media (max-width: 768px) {
+  .hero-section { padding: 40px 24px 36px; margin: -12px -12px 32px; }
+}
+
+.hero-badge {
+  display: inline-block;
+  background: rgba(255,255,255,0.2);
+  border: 1px solid rgba(255,255,255,0.35);
+  border-radius: 40px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  padding: 4px 14px;
+  margin-bottom: 18px;
+}
+
+.hero-title {
+  font-size: 48px;
+  font-weight: 700;
+  color: #fff;
+  margin: 0 0 16px;
+  line-height: 1.15;
+}
+
+@media (max-width: 768px) {
+  .hero-title { font-size: 32px; }
+}
+
+.hero-description {
+  font-size: 18px;
+  line-height: 1.6;
+  color: rgba(255,255,255,0.88);
+  max-width: 680px;
+  margin: 0 0 32px;
+}
+
+.hero-description code {
+  background: rgba(255,255,255,0.2);
+  color: #fff;
+  padding: 2px 8px;
+  border-radius: 6px;
+  box-shadow: none;
+}
+
+.hero-actions { display: flex; flex-wrap: wrap; gap: 12px; }
+
+.hero-btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 24px;
+  border-radius: var(--border-radius-button);
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none !important;
+  transition: 180ms;
+}
+
+.hero-btn-primary {
+  background: #fff;
+  color: var(--sp-primary-dark) !important;
+}
+.hero-btn-primary:hover { background: #e8f0f8; }
+
+.hero-btn-outline {
+  background: transparent;
+  color: #fff !important;
+  border: 2px solid rgba(255,255,255,0.6);
+}
+.hero-btn-outline:hover { border-color: #fff; background: rgba(255,255,255,0.1); }
+
+/* ============================================================
+   SKILLS SECTION
+   ============================================================ */
+
+.skills-section { max-width: 1200px; margin: 0 auto; padding: 0 8px; }
+
+/* ---- Filter + search bar ---- */
+
+.skills-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 28px;
+}
+
+.filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  flex: 1 1 auto;
+}
+
+.filter-btn {
+  background: var(--bs-secondary-bg, #f5f5f5);
+  border: 1px solid var(--bs-border-color, #dee2e6);
+  border-radius: var(--border-radius-button);
+  color: var(--bs-body-color, #333);
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 6px 16px;
+  transition: 180ms;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+  background: var(--sp-primary);
+  border-color: var(--sp-primary);
+  color: #fff;
+}
+
+.search-wrap { flex: 0 0 240px; }
+
+.skill-search {
+  width: 100%;
+  padding: 8px 18px;
+  border-radius: var(--border-radius-button);
+  border: 1px solid var(--bs-border-color, #dee2e6);
+  font-size: 14px;
+  background: var(--bs-body-bg, #fff);
+  color: var(--bs-body-color, #333);
+}
+.skill-search:focus { outline: 2px solid var(--sp-primary); border-color: transparent; }
+
+/* ---- Skills grid ---- */
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+  margin-bottom: 48px;
+}
+
+/* ---- Skill card ---- */
+
+.skill-card {
+  display: flex;
+  flex-direction: column;
+  background: var(--bs-body-bg, #fff);
+  border: 1px solid var(--bs-border-color, #e8e8e8);
+  border-radius: 12px;
+  box-shadow: var(--card-box-shadow);
+  text-decoration: none !important;
+  color: var(--bs-body-color, #333) !important;
+  transition: box-shadow 180ms, transform 180ms;
+  overflow: hidden;
+}
+
+.skill-card:hover {
+  box-shadow: 0 4px 12px 0 rgba(61,65,68,0.14), 0 2px 6px 0 rgba(61,65,68,0.1);
+  transform: translateY(-2px);
+}
+
+.skill-card-icon {
+  font-size: 28px;
+  padding: 20px 20px 12px;
+}
+
+.skill-card-body {
+  padding: 0 20px 12px;
+  flex: 1;
+}
+
+.skill-card-body h3 {
+  font-size: 15px;
+  font-weight: 600;
+  margin: 8px 0 6px;
+  line-height: 1.4;
+  color: var(--bs-body-color, #1b1b1b);
+}
+
+.skill-card-body p {
+  font-size: 13px;
+  line-height: 1.55;
+  color: var(--bs-secondary-color, #555);
+  margin: 0;
+}
+
+.skill-card-footer {
+  padding: 12px 20px;
+  border-top: 1px solid var(--bs-border-color, #f0f0f0);
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.skill-author {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--bs-body-color, #333);
+}
+
+.skill-tools {
+  font-size: 11px;
+  color: var(--bs-secondary-color, #888);
+  font-family: monospace;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* ---- Category badge ---- */
+
+.skill-badge {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 600;
+  border-radius: 4px;
+  padding: 2px 8px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+/* ---- Per-category colours ---- */
+
+.cat-document-quality       { background: var(--cat-doc-bg);     color: var(--cat-doc-fg); }
+.cat-list-library            { background: var(--cat-list-bg);    color: var(--cat-list-fg); }
+.cat-content-generation      { background: var(--cat-content-bg); color: var(--cat-content-fg); }
+.cat-governance              { background: var(--cat-gov-bg);     color: var(--cat-gov-fg); }
+.cat-automation              { background: var(--cat-auto-bg);    color: var(--cat-auto-fg); }
+
+/* Icon strip at top of card */
+.skill-card-icon.cat-document-quality  { background: var(--cat-doc-bg); }
+.skill-card-icon.cat-list-library       { background: var(--cat-list-bg); }
+.skill-card-icon.cat-content-generation { background: var(--cat-content-bg); }
+.skill-card-icon.cat-governance         { background: var(--cat-gov-bg); }
+.skill-card-icon.cat-automation         { background: var(--cat-auto-bg); }
+
+/* ---- No results ---- */
+
+.no-results {
+  text-align: center;
+  padding: 48px 24px;
+  color: var(--bs-secondary-color, #888);
+  font-size: 15px;
+}
+
+/* ---- Dark mode ---- */
+
+[data-bs-theme='dark'] .skill-card { border-color: #3a3a3a; }
+[data-bs-theme='dark'] .filter-btn { background: #2a2a2a; border-color: #444; color: #ddd; }
+[data-bs-theme='dark'] .skill-search { background: #1e1e1e; border-color: #444; color: #eee; }
