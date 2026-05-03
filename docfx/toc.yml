@@ -3,6 +3,6 @@
 - name: Getting Started
   href: getting-started.md
 - name: Samples
-  href: samples/toc.yml
+  href: ../samples/toc.yml
 - name: Contributing
   href: contributing.md
