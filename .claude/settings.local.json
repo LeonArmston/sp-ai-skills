@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:pnp.github.io)",
+      "WebFetch(domain:github.com)",
+      "WebSearch",
+      "WebFetch(domain:raw.githubusercontent.com)"
+    ]
+  }
+}

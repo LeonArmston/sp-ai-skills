@@ -1,0 +1,17 @@
+# DocFX build output
+docfx/_site/
+docfx/.cache/
+docfx/obj/
+
+# .NET tools local cache
+.dotnet/
+*.user
+
+# OS
+.DS_Store
+Thumbs.db
+
+# VS Code (keep .vscode/settings.json if present)
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json

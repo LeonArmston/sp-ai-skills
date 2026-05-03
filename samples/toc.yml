@@ -1,0 +1,18 @@
+- name: Document Quality
+  items:
+    - name: Metadata Completeness Checker
+      href: document-quality/metadata-completeness-checker/README.md
+    - name: ROT Content Identifier
+      href: document-quality/rot-content-identifier/README.md
+- name: List & Library
+  items:
+    - name: Column Schema Auditor
+      href: list-library/column-schema-auditor/README.md
+- name: Content Generation
+  items:
+    - name: Meeting Notes to Actions
+      href: content-generation/meeting-notes-to-actions/README.md
+- name: Governance
+  items:
+    - name: Version Change Summary
+      href: governance/version-change-summary/README.md
