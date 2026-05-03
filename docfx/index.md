@@ -2,6 +2,7 @@
 _disableContribution: true
 _disableToc: true
 _disableAffix: true
+_disableBreadcrumb: true
 title: SP AI Skills — Community AI Skills for AI in SharePoint
 ---
 
