@@ -85,29 +85,10 @@ nav.navbar {
   background-color: #1A4668 !important;
 }
 
-/* ── GitHub icon in navbar ───────────────────────────────────── */
+/* ── GitHub link (icon injected via sp-skills.js) ───────────── */
 
-/* Push GitHub link to the far right */
-.navbar-nav li:last-child {
-  margin-left: auto;
-}
-
-.navbar-nav a.nav-link[href*="github.com"] {
-  display: inline-flex !important;
-  align-items: center;
-  gap: 7px;
-}
-
-.navbar-nav a.nav-link[href*="github.com"]::before {
-  content: "";
-  display: inline-block;
-  width: 22px;
-  height: 22px;
-  flex-shrink: 0;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  background-image: url("github-mark.svg");
+.navbar-nav a[href*="github.com"] {
+  color: rgba(255,255,255,0.88) !important;
 }
 
 /* ── Sidebar & content ───────────────────────────────────────── */

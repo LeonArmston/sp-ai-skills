@@ -50,6 +50,7 @@
       "_appFaviconPath": "https://c.s-microsoft.com/favicon.ico?v2",
       "_appLogoPath": "assets/logo.svg",
       "_appCss": "public/main.css",
+      "_appJs": "public/sp-skills.js",
       "_description": "Community-contributed AI Skills for AI in SharePoint (Microsoft 365 Copilot).",
       "_enableSearch": true,
       "_enableNewTab": true,
