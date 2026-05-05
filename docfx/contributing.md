@@ -33,21 +33,16 @@ samples/
 
 ### 3. Write SKILL.md
 
-Every `SKILL.md` must include frontmatter:
+`SKILL.md` contains only the skill instructions — pure Markdown that the AI agent reads and follows. No YAML frontmatter. Start directly with a `#` heading.
 
-```yaml
----
-name: my-skill-name
-description: One-line description of what the skill does
-category: document-quality
-tools_required:
-  - get_current_list_or_library
-  - get_list_schema
-tested_on: AI in SharePoint Public Preview (May 2026)
-author: Your Name
----
+```markdown
+# My Skill Name
 
-[Skill instructions follow in plain Markdown...]
+Brief description of what this skill does.
+
+## Step 1 — ...
+
+Instructions for the AI agent...
 ```
 
 **Writing good instructions:**
@@ -58,7 +53,7 @@ author: Your Name
 
 ### 4. Write README.md
 
-Use this template:
+The README is where all metadata lives — category, required tools, author, tested version. Use this template:
 
 ```markdown
 # Skill Name
@@ -70,17 +65,24 @@ What this skill does and when you'd use it.
 - AI in SharePoint public preview enabled
 - Microsoft 365 Copilot licence
 - [Any list/library structure required]
-- Tools required: [from tools_required frontmatter]
+- Tools required: tool_name_1, tool_name_2
 
 ## How to deploy
-1. Copy SKILL.md to Agent Assets/Skills/[skill-name]/ on your site
-   OR paste the contents into AI in SharePoint chat and ask it to save as a skill
+
+[Download SKILL.md](https://raw.githubusercontent.com/LeonArmston/sp-ai-skills/main/samples/[category]/[skill-name]/SKILL.md ':ignore')
+
+1. Paste the contents of SKILL.md into the AI in SharePoint chat and ask it to save as a skill
+   OR upload SKILL.md to Agent Assets/Skills/[skill-name]/ on your site
 
 ## How to use
 How to invoke the skill and what inputs it expects.
 
 ## Example output
 Description or screenshot of what the skill produces.
+
+## Skill definition
+
+[!code-markdown[](SKILL.md)]
 
 ## Tested on
 AI in SharePoint Public Preview – [Month Year]

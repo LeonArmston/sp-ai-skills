@@ -6,7 +6,7 @@ Thank you for contributing! This repo is a community collection of AI Skills for
 
 - Test your skill in a real AI in SharePoint environment — actually run it, don't just author it
 - Make sure the skill only uses tools available in your environment (use `--agenttools` in chat to verify)
-- Fill in the frontmatter in `SKILL.md` completely
+- Keep `SKILL.md` as pure instructions — no YAML frontmatter
 
 ## Folder structure
 
@@ -21,21 +21,19 @@ samples/
         └── assets/        # Optional screenshots
 ```
 
-## SKILL.md frontmatter
+## SKILL.md format
 
-Every `SKILL.md` must include this frontmatter:
+`SKILL.md` contains only the skill instructions — pure Markdown the AI agent reads directly. No YAML frontmatter. Start with a `#` heading and write step-by-step instructions.
 
-```yaml
----
-name: skill-name-in-kebab-case
-description: One-line description of what the skill does
-category: document-quality | list-library | content-generation | governance | automation
-tools_required:
-  - tool_name
-tested_on: AI in SharePoint Public Preview (May 2026)
-author: Your Name
----
+```markdown
+# Skill Name
+
+Brief description of what this skill does.
+
+## Step 1 — ...
 ```
+
+All metadata (category, tools, author, version) belongs in `README.md`, not in `SKILL.md`. Users copy or drop `SKILL.md` straight into their SharePoint environment.
 
 ## README.md template
 
