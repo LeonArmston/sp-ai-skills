@@ -16,6 +16,8 @@ Useful for document reviewers, approvers, legal and compliance teams, and anyone
 
 ## How to deploy
 
+[Download SKILL.md](https://raw.githubusercontent.com/LeonArmston/sp-ai-skills/main/samples/governance/version-change-summary/SKILL.md ':ignore')
+
 **Option 1 — Via chat:**
 1. Open the AI in SharePoint chat panel on your site
 2. Paste the contents of `SKILL.md` and ask the agent to save it:
@@ -67,6 +69,10 @@ Change classification:
   Substantive: Section 3 (payment terms), Section 8 (new clause)
   Editorial:   Section 12
 ```
+
+## Skill definition
+
+[!code-yaml[](SKILL.md)]
 
 ## Tested on
 

@@ -13,6 +13,8 @@ Audits a document library and reports which documents have missing or incomplete
 
 ## How to deploy
 
+[Download SKILL.md](https://raw.githubusercontent.com/LeonArmston/sp-ai-skills/main/samples/document-quality/metadata-completeness-checker/SKILL.md ':ignore')
+
 **Option 1 — Via chat:**
 1. Open the AI in SharePoint chat panel on your site
 2. Paste the contents of `SKILL.md` and ask the agent to save it:
@@ -47,6 +49,12 @@ Project Alpha SOW.docx          Department
 NDA Template v3.docx            Department, Document Owner
 ...
 ```
+
+## Skill definition
+
+Copy the content below directly into the AI in SharePoint chat to deploy this skill, or download the file using the link in the [How to deploy](#how-to-deploy) section.
+
+[!code-yaml[](SKILL.md)]
 
 ## Tested on
 

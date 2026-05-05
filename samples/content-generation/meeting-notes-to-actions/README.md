@@ -15,6 +15,8 @@ Ideal for teams who run regular meetings and want a quick way to capture actions
 
 ## How to deploy
 
+[Download SKILL.md](https://raw.githubusercontent.com/LeonArmston/sp-ai-skills/main/samples/content-generation/meeting-notes-to-actions/SKILL.md ':ignore')
+
 **Option 1 — Via chat:**
 1. Open the AI in SharePoint chat panel on your site
 2. Paste the contents of `SKILL.md` and ask the agent to save it:
@@ -53,6 +55,10 @@ Note:
 
 Navigate to Action Items list to review: [link]
 ```
+
+## Skill definition
+
+[!code-yaml[](SKILL.md)]
 
 ## Tested on
 

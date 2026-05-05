@@ -13,6 +13,8 @@ Scans a document library and flags Redundant, Outdated, or Trivial (ROT) content
 
 ## How to deploy
 
+[Download SKILL.md](https://raw.githubusercontent.com/LeonArmston/sp-ai-skills/main/samples/document-quality/rot-content-identifier/SKILL.md ':ignore')
+
 **Option 1 — Via chat:**
 1. Open the AI in SharePoint chat panel on your site
 2. Paste the contents of `SKILL.md` and ask the agent to save it:
@@ -51,6 +53,10 @@ TRIVIAL (3 items)
   Copy of Template.docx — placeholder, 2KB
   test.docx — no content
 ```
+
+## Skill definition
+
+[!code-yaml[](SKILL.md)]
 
 ## Tested on
 

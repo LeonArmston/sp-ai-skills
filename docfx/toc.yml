@@ -12,11 +12,15 @@
           href: ../samples/document-quality/metadata-completeness-checker/README.md
         - name: ROT Content Identifier
           href: ../samples/document-quality/rot-content-identifier/README.md
+        - name: File Classifier
+          href: ../samples/document-quality/file-classifier/README.md
     - name: "List & Library"
       href: ../samples/list-library/column-schema-auditor/README.md
       items:
         - name: Column Schema Auditor
           href: ../samples/list-library/column-schema-auditor/README.md
+        - name: Library Cleanup
+          href: ../samples/list-library/library-cleanup/README.md
     - name: Content Generation
       href: ../samples/content-generation/meeting-notes-to-actions/README.md
       items:
@@ -27,5 +31,12 @@
       items:
         - name: Version Change Summary
           href: ../samples/governance/version-change-summary/README.md
+        - name: Site Storage Heatmap
+          href: ../samples/governance/site-storage-heatmap/README.md
+    - name: Automation
+      href: ../samples/automation/organize-library/README.md
+      items:
+        - name: Organize Library
+          href: ../samples/automation/organize-library/README.md
 - name: Contributing
   href: contributing.md

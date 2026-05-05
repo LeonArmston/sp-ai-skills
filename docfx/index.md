@@ -149,6 +149,54 @@ title: SP AI Skills — Community AI Skills for AI in SharePoint
 <span class="skill-tools">compare_file_versions &middot; list_item_versions</span>
 </div>
 </a>
+<a href="samples/document-quality/file-classifier/README.html" class="skill-card cat-document-quality" data-category="document-quality">
+<div class="skill-card-top cat-document-quality"></div>
+<div class="skill-card-body">
+<span class="skill-badge cat-document-quality"><i class="bi bi-file-earmark-check"></i>Document Quality</span>
+<h3>File Classifier</h3>
+<p>Classifies documents as Contracts, Invoices, or Purchase Orders using structure-first analysis, then extracts and populates metadata columns automatically.</p>
+</div>
+<div class="skill-card-footer">
+<span class="skill-author">pnp community</span>
+<span class="skill-tools">fetch_file &middot; create_or_update_list &middot; update_list_items</span>
+</div>
+</a>
+<a href="samples/list-library/library-cleanup/README.html" class="skill-card cat-list-library" data-category="list-library">
+<div class="skill-card-top cat-list-library"></div>
+<div class="skill-card-body">
+<span class="skill-badge cat-list-library"><i class="bi bi-table"></i>List &amp; Library</span>
+<h3>Library Cleanup</h3>
+<p>Scans for duplicates, bad names, and empty folders, recommends a clean structure, reads file content for meaningful renames, then executes with a live checklist.</p>
+</div>
+<div class="skill-card-footer">
+<span class="skill-author">pnp community</span>
+<span class="skill-tools">fetch_file &middot; update_list_items &middot; delete_list_item</span>
+</div>
+</a>
+<a href="samples/automation/organize-library/README.html" class="skill-card cat-automation" data-category="automation">
+<div class="skill-card-top cat-automation"></div>
+<div class="skill-card-body">
+<span class="skill-badge cat-automation"><i class="bi bi-gear-wide-connected"></i>Automation</span>
+<h3>Organize Library</h3>
+<p>End-to-end library organisation — classify files, format columns with colour-coded pills, create per-content-type views, colour folders, and set up notification rules.</p>
+</div>
+<div class="skill-card-footer">
+<span class="skill-author">pnp community</span>
+<span class="skill-tools">load_skill &middot; apply_column_formatting &middot; create_or_update_rule</span>
+</div>
+</a>
+<a href="samples/governance/site-storage-heatmap/README.html" class="skill-card cat-governance" data-category="governance">
+<div class="skill-card-top cat-governance"></div>
+<div class="skill-card-body">
+<span class="skill-badge cat-governance"><i class="bi bi-shield-check"></i>Governance</span>
+<h3>Site Storage Heatmap</h3>
+<p>Generates an interactive HTML dashboard showing storage and hot/cold activity across all libraries, lists, and site pages. Saved directly to your document library.</p>
+</div>
+<div class="skill-card-footer">
+<span class="skill-author">pnp community</span>
+<span class="skill-tools">discover_sharepoint_lists &middot; get_list_item_metadata</span>
+</div>
+</a>
 </div>
 <div id="noResults" class="no-results" style="display:none">
 <p>No skills found. <a href="contributing.html">Contribute one!</a></p>

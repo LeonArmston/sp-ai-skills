@@ -13,6 +13,8 @@ Reviews the column schema of a SharePoint list or library and reports gaps, inco
 
 ## How to deploy
 
+[Download SKILL.md](https://raw.githubusercontent.com/LeonArmston/sp-ai-skills/main/samples/list-library/column-schema-auditor/SKILL.md ':ignore')
+
 **Option 1 — Via chat:**
 1. Open the AI in SharePoint chat panel on your site
 2. Paste the contents of `SKILL.md` and ask the agent to save it:
@@ -54,6 +56,10 @@ RECOMMENDATIONS
   2. Rename or remove Column1
   3. Change Priority to a Choice column for consistent filtering
 ```
+
+## Skill definition
+
+[!code-yaml[](SKILL.md)]
 
 ## Tested on
 

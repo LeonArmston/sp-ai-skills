@@ -5,11 +5,15 @@
       href: document-quality/metadata-completeness-checker/README.md
     - name: ROT Content Identifier
       href: document-quality/rot-content-identifier/README.md
+    - name: File Classifier
+      href: document-quality/file-classifier/README.md
 - name: "List & Library"
   href: list-library/column-schema-auditor/README.md
   items:
     - name: Column Schema Auditor
       href: list-library/column-schema-auditor/README.md
+    - name: Library Cleanup
+      href: list-library/library-cleanup/README.md
 - name: Content Generation
   href: content-generation/meeting-notes-to-actions/README.md
   items:
@@ -20,3 +24,10 @@
   items:
     - name: Version Change Summary
       href: governance/version-change-summary/README.md
+    - name: Site Storage Heatmap
+      href: governance/site-storage-heatmap/README.md
+- name: Automation
+  href: automation/organize-library/README.md
+  items:
+    - name: Organize Library
+      href: automation/organize-library/README.md
