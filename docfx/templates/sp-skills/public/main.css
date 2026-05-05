@@ -87,21 +87,27 @@ nav.navbar {
 
 /* ── GitHub icon in navbar ───────────────────────────────────── */
 
-/* Show Bootstrap Icons github icon before the link text */
-.navbar-nav a.nav-link[href*="github.com"]::before {
-  font-family: "bootstrap-icons";
-  content: "\f3e2";
-  font-size: 18px;
-  margin-right: 5px;
-  vertical-align: middle;
-  line-height: 1;
+/* Push GitHub link to the far right */
+.navbar-nav li:last-child {
+  margin-left: auto;
 }
 
-/* On wider screens show only the icon, hide the "GitHub" text */
-@media (min-width: 992px) {
-  .navbar-nav a.nav-link[href*="github.com"] .nav-link-text {
-    display: none;
-  }
+.navbar-nav a.nav-link[href*="github.com"] {
+  display: inline-flex !important;
+  align-items: center;
+  gap: 7px;
+}
+
+.navbar-nav a.nav-link[href*="github.com"]::before {
+  content: "";
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  flex-shrink: 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-image: url("github-mark.svg");
 }
 
 /* ── Sidebar & content ───────────────────────────────────────── */
