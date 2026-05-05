@@ -85,6 +85,25 @@ nav.navbar {
   background-color: #1A4668 !important;
 }
 
+/* ── GitHub icon in navbar ───────────────────────────────────── */
+
+/* Show Bootstrap Icons github icon before the link text */
+.navbar-nav a.nav-link[href*="github.com"]::before {
+  font-family: "bootstrap-icons";
+  content: "\f3e2";
+  font-size: 18px;
+  margin-right: 5px;
+  vertical-align: middle;
+  line-height: 1;
+}
+
+/* On wider screens show only the icon, hide the "GitHub" text */
+@media (min-width: 992px) {
+  .navbar-nav a.nav-link[href*="github.com"] .nav-link-text {
+    display: none;
+  }
+}
+
 /* ── Sidebar & content ───────────────────────────────────────── */
 
 /* Sidebar active link teal */
