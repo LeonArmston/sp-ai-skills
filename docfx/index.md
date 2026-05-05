@@ -8,17 +8,17 @@ title: SP AI Skills — Community AI Skills for AI in SharePoint
 
 <style>
 :root {
-  --sp-primary:#0f6cbd;
-  --sp-primary-dark:#094074;
-  --sp-teal:#038387;
-  --sp-teal-dark:#025d60;
+  --sp-primary:#1B72A8;
+  --sp-primary-dark:#1A4668;
+  --sp-teal:#1B72A8;
+  --sp-teal-dark:#1A4668;
   --cat-doc-bg:#e8f5f5;--cat-doc-fg:#025d60;--cat-doc-border:#038387;
   --cat-list-bg:#f0ebf9;--cat-list-fg:#5c2d91;--cat-list-border:#8764b8;
   --cat-content-bg:#deeeff;--cat-content-fg:#094074;--cat-content-border:#0f6cbd;
   --cat-gov-bg:#fce8e2;--cat-gov-fg:#a4262c;--cat-gov-border:#c4314b;
   --cat-auto-bg:#dff6dd;--cat-auto-fg:#107c10;--cat-auto-border:#107c10;
 }
-.hero-section{background:linear-gradient(135deg,var(--sp-primary-dark) 0%,var(--sp-teal-dark) 100%);color:#fff;padding:56px 40px 48px;margin:-20px -20px 40px;border-radius:0 0 12px 12px}
+.hero-section{background:linear-gradient(135deg,#1A4668 0%,#1B72A8 100%);color:#fff;padding:56px 40px 48px;margin:-20px -20px 40px;border-radius:0 0 12px 12px}
 @media(max-width:768px){.hero-section{padding:36px 20px 32px;margin:-12px -12px 28px}}
 .hero-eyebrow{display:inline-block;background:rgba(255,255,255,0.18);border:1px solid rgba(255,255,255,0.3);border-radius:20px;font-size:12px;font-weight:600;letter-spacing:.04em;padding:3px 12px;margin-bottom:16px}
 .hero-title{font-size:42px;font-weight:700;color:#fff;margin:0 0 14px;line-height:1.15}
@@ -35,7 +35,7 @@ title: SP AI Skills — Community AI Skills for AI in SharePoint
 .skills-controls{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-bottom:24px}
 .filter-bar{display:flex;flex-wrap:wrap;gap:6px;flex:1}
 .filter-btn{background:#f3f2f1;border:1px solid #e1dfdd;border-radius:20px;color:#323130;font-size:13px;font-weight:500;padding:5px 14px;cursor:pointer;transition:150ms}
-.filter-btn:hover,.filter-btn.active{background:var(--sp-primary);border-color:var(--sp-primary);color:#fff}
+.filter-btn:hover,.filter-btn.active{background:#1B72A8;border-color:#1B72A8;color:#fff}
 .search-wrap{flex:0 0 220px}
 .skill-search{width:100%;padding:6px 16px;border-radius:20px;border:1px solid #e1dfdd;font-size:13px;background:#fff;color:#323130}
 .skill-search:focus{outline:2px solid var(--sp-primary);border-color:transparent}
