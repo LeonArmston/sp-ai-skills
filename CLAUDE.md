@@ -35,21 +35,21 @@ Each sample folder contains:
 
 ## SKILL.md format
 
-Every skill in this repo MUST include this frontmatter:
+`SKILL.md` files contain **only the skill instructions** — pure Markdown that the AI agent reads and follows. No YAML frontmatter. The file starts directly with a `# Heading` and step-by-step instructions.
 
-```yaml
----
-name: skill-name-in-kebab-case
-description: One-line description of what the skill does and when to use it
-category: document-quality | list-library | content-generation | governance | automation
-tools_required:
-  - tool_name
-tested_on: AI in SharePoint Public Preview (May 2026)
-author: Contributor Name
----
+All metadata (category, tools required, author, tested version) belongs in the `README.md`, not in the skill file. Users copy or upload `SKILL.md` directly into their SharePoint environment and should not see repository metadata.
+
+```markdown
+# Skill Name
+
+Brief one-line description of what this skill does.
+
+## Step 1 — ...
+
+Instructions for the AI agent...
 ```
 
-Followed by the skill instructions in plain Markdown. Write instructions as clear, step-by-step directives to the AI agent. Be specific about inputs, outputs, and how to handle edge cases.
+Write instructions as clear, step-by-step directives to the AI agent. Be specific about inputs, outputs, and how to handle edge cases.
 
 ## Sample README.md format
 

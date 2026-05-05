@@ -1,19 +1,3 @@
----
-name: file-classifier
-description: Classify SharePoint documents by content type (Contracts, Invoices, Purchase Orders) using structure-first analysis, then extract and populate five metadata columns per content type
-category: document-quality
-tools_required:
-  - get_current_list_or_library
-  - get_list_schema
-  - get_list_item_metadata
-  - fetch_file
-  - create_or_update_list
-  - update_list_items
-tested_on: AI in SharePoint Public Preview (May 2026)
-author: pnp community
-source: https://github.com/pnp/sharepoint-skills/tree/main/Skills/file-classifier
----
-
 # File Classifier
 
 Classify documents in the current SharePoint library by their content type and extract structured metadata — using structure-first analysis, not keyword matching.

@@ -1,16 +1,3 @@
----
-name: rot-content-identifier
-description: Flags Redundant, Outdated, or Trivial (ROT) content in a document library to support content governance and clean-up
-category: document-quality
-tools_required:
-  - get_current_list_or_library
-  - get_list_item_metadata
-  - fetch_file
-  - qna_on_list
-tested_on: AI in SharePoint Public Preview (May 2026)
-author: Leon Armston
----
-
 # ROT Content Identifier
 
 You are helping a SharePoint site owner identify Redundant, Outdated, or Trivial (ROT) content in the current document library to support governance clean-up.

@@ -1,24 +1,3 @@
----
-name: organize-library
-description: Fully organise a SharePoint document library — classify files, extract metadata, apply brand-consistent column formatting, create per-content-type views, set folder colours, and create notification rules for overdue items. Orchestrates the file-classifier skill and reads SHAREPOINT.md for brand guidelines.
-category: automation
-tools_required:
-  - get_current_list_or_library
-  - get_list_schema
-  - get_list_item_metadata
-  - load_skill
-  - apply_column_formatting
-  - apply_view_formatting
-  - create_or_update_list
-  - get_views_of_list
-  - create_or_update_rule
-  - get_user_info
-  - set_context_file
-tested_on: AI in SharePoint Public Preview (May 2026)
-author: pnp community
-source: https://github.com/pnp/sharepoint-skills/tree/main/Skills/organize-library
----
-
 # Organize Library
 
 End-to-end SharePoint document library organisation with incremental visual feedback at each step. Classifies files, formats metadata columns, creates per-content-type views, colours folders, and sets up notification rules — all using brand colours from the site's SHAREPOINT.md context file.

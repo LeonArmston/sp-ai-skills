@@ -1,19 +1,3 @@
----
-name: library-cleanup
-description: Organises files in a document library so people and AI can find them easily — scans for issues, recommends a clean structure with before/after comparison, reads file content to propose meaningful renames, then executes with a checklist the user can follow along with
-category: list-library
-tools_required:
-  - get_current_list_or_library
-  - get_list_item_metadata
-  - fetch_file
-  - update_list_items
-  - delete_list_item
-  - create_or_update_list
-tested_on: AI in SharePoint Public Preview (May 2026)
-author: pnp community
-source: https://github.com/pnp/sharepoint-skills/tree/main/Skills/library-cleanup
----
-
 # Library Cleanup
 
 Organise and clean up the current document library in four structured phases. Triggered when the user says **"clean up this library"** or **"clean up file demo"**.

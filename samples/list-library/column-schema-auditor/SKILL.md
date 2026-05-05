@@ -1,16 +1,3 @@
----
-name: column-schema-auditor
-description: Reviews the column schema of a SharePoint list or library against a defined standard and reports gaps, inconsistencies, or unused columns
-category: list-library
-tools_required:
-  - get_current_list_or_library
-  - get_list_schema
-  - discover_sharepoint_lists
-  - get_list_item_metadata
-tested_on: AI in SharePoint Public Preview (May 2026)
-author: Leon Armston
----
-
 # Column Schema Auditor
 
 You are helping a SharePoint site owner audit the column schema of a list or library to ensure it follows a defined standard and is well-structured.

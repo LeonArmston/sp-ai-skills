@@ -1,17 +1,3 @@
----
-name: meeting-notes-to-actions
-description: Converts meeting notes into a structured SharePoint action items list with owners, due dates, and priorities
-category: content-generation
-tools_required:
-  - discover_sharepoint_lists
-  - create_or_update_list
-  - create_list_items
-  - get_user_info
-  - get_datetime_info
-tested_on: AI in SharePoint Public Preview (May 2026)
-author: Leon Armston
----
-
 # Meeting Notes to Actions
 
 You are helping a SharePoint user turn meeting notes into structured action items in a SharePoint list.

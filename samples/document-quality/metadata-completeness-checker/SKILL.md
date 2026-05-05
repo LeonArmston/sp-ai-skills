@@ -1,16 +1,3 @@
----
-name: metadata-completeness-checker
-description: Reviews selected documents in the current library and reports which required metadata fields are missing or incomplete
-category: document-quality
-tools_required:
-  - get_current_list_or_library
-  - get_list_schema
-  - get_list_item_metadata
-  - qna_on_list
-tested_on: AI in SharePoint Public Preview (May 2026)
-author: Leon Armston
----
-
 # Metadata Completeness Checker
 
 You are helping a SharePoint site user audit the metadata quality of documents in the current library.

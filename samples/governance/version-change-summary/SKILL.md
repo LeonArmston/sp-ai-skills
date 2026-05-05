@@ -1,16 +1,3 @@
----
-name: version-change-summary
-description: Summarises what changed between the current and previous version of a selected Word document, using built-in version comparison
-category: governance
-tools_required:
-  - get_current_list_or_library
-  - get_list_item_metadata
-  - list_item_versions
-  - compare_file_versions
-tested_on: AI in SharePoint Public Preview (May 2026)
-author: Leon Armston
----
-
 # Version Change Summary
 
 You are helping a SharePoint user understand what changed in a Word document between its current version and a previous version.

@@ -1,19 +1,3 @@
----
-name: site-storage-heatmap
-description: Generates an interactive HTML site map showing storage breakdown and hot/cold activity heatmap across all document libraries, lists, and site pages. Saves the file to the site library and navigates the user to it.
-category: governance
-tools_required:
-  - get_user_info
-  - discover_sharepoint_lists
-  - get_list_item_metadata
-  - get_list_schema
-  - create_list_items
-  - navigate_to_url
-tested_on: AI in SharePoint Public Preview (May 2026)
-author: pnp community
-source: https://github.com/pnp/sharepoint-skills/tree/main/Skills/site-storage-heatmap
----
-
 # Site Storage Heatmap
 
 Generate an interactive HTML dashboard showing storage allocation and activity patterns across the entire SharePoint site. The output is a self-contained HTML file saved to the site's document library.
