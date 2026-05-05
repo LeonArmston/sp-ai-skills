@@ -85,10 +85,72 @@ nav.navbar {
   background-color: #1A4668 !important;
 }
 
-/* ── GitHub link (icon injected via sp-skills.js) ───────────── */
+/* ── GitHub widget (injected by sp-skills.js) ────────────────── */
 
-.navbar-nav a[href*="github.com"] {
-  color: rgba(255,255,255,0.88) !important;
+.github-mark {
+  margin-left: auto;
+  padding-left: 16px;
+  flex-shrink: 0;
+}
+
+.github-mark a {
+  display: flex !important;
+  align-items: center;
+  text-decoration: none !important;
+  color: #fff !important;
+  padding: 4px 10px;
+  border-radius: 6px;
+  transition: background 140ms;
+}
+
+.github-mark a:hover {
+  background: rgba(255,255,255,0.14);
+}
+
+.github-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.github-icon {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.github-repository {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.github-repository > span {
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.github-facts {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.github-facts li {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  font-size: 12px;
+  color: rgba(255,255,255,0.8);
+}
+
+.github-forks,
+.github-stars {
+  font-size: 12px;
+  color: rgba(255,255,255,0.8);
 }
 
 /* ── Sidebar & content ───────────────────────────────────────── */
